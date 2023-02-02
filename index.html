@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <title>HTML & CSS Cheatsheet</title>
+  </head>
+
+  <body>
+    <header>
+    <h1>Html & Css Cheat Sheet</h1>
+      <nav class="main-menu">
+        <li><a href=#tables>Tables</a></li>
+          <li><a href=#forms>Forms</a></li>
+          <li><a href=#flex>Flexbox</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="html">
+      <section id="tables"> 
+      <h2>HTML</h2>
+      <h3>Tables</h3>
+      <table align='center'>
+        <thead>
+          <tr>
+            <th>Syntax</th>
+            <th>Name</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;table&gt;</td>
+            <td>Table</td>
+            <td>
+                Defines a table.
+            </td>
+          </tr>
+           <tr>
+          <td>&lt;thead&gt;</td>
+          <td>Table Head</td>
+          <td>Groups the header content in a table.</td>
+        </tr>
+        <tr>
+          <td>&lt;tbody&gt;</td>
+          <td>Table Body</td>
+          <td>Groups the body content in a table.</td>
+        </tr>
+        <tr>
+          <td>&lt;tr&gt;</td>
+          <td>Table Row</td>
+          <td>Defines a row in a table.</td>
+        </tr>
+        <tr>
+          <td>&lt;td&gt;</td>
+          <td>Table Data</td>
+          <td>Defines a cell in a table.</td>
+        </tr>
+        <tr>
+          <td>&lt;tfoot&gt;</td>
+          <td>Table Foot</td>
+          <td>Groups the footer content in a table.</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="forms">
+      <h3>Forms</h3>
+      <table align='center'>
+        <thead>
+
+          <tr>
+            <th>Syntax</th>
+            <th>Attributes</th>
+            <th colspan="2">Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+     <tr><td rowspan="2">&lt;form&gt;</td><td>action</td><td colspan="2">Specifies where to send the form-data when a form is submitted.</td>
+    </tr>
+    <tr>
+      <td>method</td><td colspan="2">Specifies the HTTP method to use when sending form-data.</td>
+    </tr>
+            <td rowspan="16">&lt;input&gt;</td>
+            <td rowspan="8">type</td>
+            <td colspan="2">Type of input:</td>
+            <tr>
+              <td>text</td><td> Defines a single-line text field.</td>
+            </tr>
+            <tr>
+              <td>password</td><td>Defines a password field.</td>
+            </tr>
+            <tr>
+              <td>number</td><td>Defines a field for entering a number.</td>
+            </tr>
+            <tr>
+              <td>range</td><td>Defines a range control (like a slider control).</td>
+            </tr>
+            <tr>
+              <td>checkbox</td><td>Defines a checkbox.</td>
+            </tr>
+            <tr>
+              <td>radio</td><td>Defines a radio button</td>
+            </tr>
+            <tr>
+              <td>submit</td><td>Defines a submit button</td>
+            </tr>
+            
+          <tr>
+            <td>name</td>
+            <td colspan="2">Specifies the name of an &lt;input&gt; element.</td>
+          </tr>
+          <tr>
+            <td>value</td>
+            <td colspan="2">Specifies the value of an &lt;input&gt; element.</td>
+          </tr>
+          <tr>
+            <td>step</td>
+            <td colspan="2">Specifies the interval between legal numbers in an input field.</td>
+          </tr>
+          <tr>
+            <td>list</td><td colspan="2"> 	Refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element</td>
+          </tr>
+          <tr>
+            <td>required</td><td colspan="2">Specifies that an input field must be filled out before submitting the form.</td>
+          </tr>
+          <tr>
+            <td>min / max</td><td colspan="2">Specifies a minimum or maximum value for an &lt;input&gt; element.</td>
+          </tr>
+          <tr>
+            <td>minlength / maxlength</td><td colspan="2">Specifies the minimum or maximum character length for an &lt;input&gt; element.</td>
+          </tr>
+          <tr>
+            <td>pattern</td><td colspan="2">Specifies a regular expression that an &lt;input&gt; element's value is checked against.</td>
+          </tr>
+          <tr>
+            <td>&lt;select&gt;</td>
+            <td colspan="3">Defines a drop-down list.</td>
+          </tr>
+          <tr>
+            <td>&lt;datalist&gt;</td>
+            <td colspan="3">Specifies a list of pre-defined options for input controls.</td>
+          </tr>
+          <tr>
+            <td>&lt;textarea&gt;</td>
+            <td colspan="3">Defines a multiline input control (text area).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    </div>
+    <div class="css">
+      <section id="flex">
+        <h2>CSS</h2>
+        <h3>Flexbox</h3>
+        <table align='center'>
+          <thead>
+            <tr>
+              <th>Syntax</th>
+              <th>Value</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="3">Horizontal align</th>
+            </tr>
+            <tr>
+              <td rowspan="6">justify-content</td>
+              <td>flex-start</td>
+              <td>Lines are packed toward the start of the flex container.</td>
+            </tr>
+            <tr>
+                <td>flex-end</td>
+                <td>Lines are packed toward the end of the flex container.</td>
+              </tr>
+              <tr>
+                <td>center</td>
+                <td>Lines are packed toward the center of the flex container.</td>
+              </tr>
+              <tr>
+                <td>space-between</td>
+                <td>Lines are evenly distributed in the flex container.</td>
+              </tr>
+              <tr>
+                <td>space-around</td>
+                <td>Lines are evenly distributed in the flex container, with half-size spaces on either end.</td>
+              </tr>
+              <tr>
+                <td>stretch</td>
+                <td>Default value. Lines stretch to take up the remaining space.</td>
+              </tr>
+            <tr>
+              <td rowspan="3">flex-wrap</td>
+              <td>nowrap</td>
+              <td>Default value. Specifies that the flexible items will not wrap.</td>
+            </tr>
+            <tr>
+                <td>wrap</td>
+                <td>Specifies that the flexible items will wrap if necessary.</td>
+            </tr>
+            <tr>
+                <td>wrap-reverse</td>
+                <td>Specifies that the flexible items will wrap, if necessary, in reverse order.</td>
+            </tr>
+            <tr>
+              <td>flex-grow</td>
+              <td>value</td>
+              <td>A number specifying how much the item will grow relative to the rest of the flexible items. Default value is 0.</td>
+            </tr>
+            <tr>
+              <td>flex-shrink</td>
+              <td>value</td>
+              <td>A number specifying how much the item will shrink relative to the rest of the flexible items. Default value is 1.</td>
+            </tr>
+            <tr>
+              <th colspan="3">Vertical align</th>
+            </tr>
+            <tr>
+              <td rowspan="6">align-content & align-items</td>
+              <td>flex-start</td>
+              <td>Lines are packed toward the start of the flex container.</td>
+            </tr>
+            <tr>
+              <td>flex-end</td>
+              <td>Lines are packed toward the end of the flex container.</td>
+            </tr>
+            <tr>
+              <td>center</td>
+              <td>Lines are packed toward the center of the flex container.</td>
+            </tr>
+            <tr>
+              <td>space-between</td>
+              <td>Lines are evenly distributed in the flex container.</td>
+            </tr>
+            <tr>
+              <td>space-around</td>
+              <td>Lines are evenly distributed in the flex container, with half-size spaces on either end.</td>
+            </tr>
+            <tr>
+              <td>stretch</td>
+              <td>Default value. Lines stretch to take up the remaining space.</td>
+            </tr>
+            <tr>
+              <th colspan="3">Other</th>
+            </tr>
+            <tr>
+              <td rowspan="4">flex-direction</td>
+              <td>row</td>
+              <td>Default value. The flexible items are displayed horizontally, as a row.</td>
+            </tr>
+            <tr>
+              <td>row-reverse</td>
+              <td>Same as row, but in reverse order.</td>
+            </tr>
+            <tr>
+              <td>column</td>
+              <td>The flexible items are displayed vertically, as a column.</td>
+            </tr>
+            <tr>
+              <td>column-reverse</td>
+              <td>Same as column, but in reverse order.</td>
+            </tr>
+          </tbody>
+
+
+        </table>
+
+
+      </section>
+
+    </div>
+  </body>
+
+</html>
